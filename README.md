@@ -173,11 +173,11 @@ PATCH http://localhost:8080/api/employment-agreements/1
 - **Description**: Delete a specific employment agreement by its ID.
 
 **Example Request**:
-DELETE http://localhost:8080/api/employment-agreements/1
+# DELETE http://localhost:8080/api/employment-agreements/1
 
 **Example Response**:
 ```
 {
-    "message": "EmploymentAgreement with ID 2 has been deleted successfully."
+    "message": "EmploymentAgreement with ID 1 has been deleted successfully."
 }
 ```
