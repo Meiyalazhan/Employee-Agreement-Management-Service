@@ -54,7 +54,7 @@ Below are the available API endpoints for the service. Use Postman or any other 
 - **Description**: Fetch a list of all employment agreements.
 
 **Example Request**:
-#### http://localhost:8080/api/employment-agreements
+#### GET http://localhost:8080/api/employment-agreements
 
 **Example Response**:
 ```
