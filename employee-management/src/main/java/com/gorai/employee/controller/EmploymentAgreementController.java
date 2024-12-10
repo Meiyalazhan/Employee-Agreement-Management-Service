@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -41,9 +42,11 @@ public class EmploymentAgreementController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteAgreement(@PathVariable Long id) {
+    public ResponseEntity<Map<String, String>> deleteAgreement(@PathVariable Long id) {
         service.deleteAgreement(id);
-        return ResponseEntity.noContent().build();
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "EmploymentAgreement with ID " + id + " has been deleted successfully.");
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping
