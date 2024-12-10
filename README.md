@@ -31,4 +31,47 @@ Clone or download the project from the repository.
 
 ## Database Setup
 
-1. Open your web browser and navigate to the **H2 Console**:
+1. Open your web browser and navigate to the **H2 Console**: http://localhost:8080/h2-console
+2. Enter the following details:
+- **JDBC URL**: `jdbc:h2:mem:testdb`
+- **Username**: `sa`
+- **Password**: *(leave it blank)*
+
+3. Click `Connect`. You will be connected to the in-memory H2 database.
+4. Once connected, you can execute SQL commands or inspect the database schema.
+
+---
+
+## API Endpoints
+
+Below are the available API endpoints for the service. Use Postman or any other API testing tool to test them.
+
+---
+
+### GET
+
+#### Retrieve All Employment Agreements
+- **Endpoint**: `GET /api/employment-agreements`
+- **Description**: Fetch a list of all employment agreements.
+
+**Example Request**:
+http://localhost:8080/api/employment-agreements
+
+**Example Response**:
+```
+[
+    {
+        "id": 1,
+        "employeeName": "John Doe",
+        "role": "Software Engineer",
+        "startDate": "2024-01-01",
+        "endDate": "2025-12-31",
+        "salary": 85000,
+        "terms": "Full Time",
+        "otherDetails": {
+            "department": "Development",
+            "manager": "Jane Smith"
+        }
+    }
+]
+```
