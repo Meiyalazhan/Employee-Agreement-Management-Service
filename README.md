@@ -175,4 +175,9 @@ PATCH http://localhost:8080/api/employment-agreements/1
 **Example Request**:
 DELETE http://localhost:8080/api/employment-agreements/1
 
-
+**Example Response**:
+```
+{
+    "message": "EmploymentAgreement with ID 2 has been deleted successfully."
+}
+```
