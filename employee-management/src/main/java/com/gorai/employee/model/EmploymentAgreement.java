@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.util.Map;
 
 @Entity
+@ValidDateRange(message = "Start date must be before end date")
 public class EmploymentAgreement {
 
     @Id
@@ -19,7 +20,6 @@ public class EmploymentAgreement {
     private String role;
 
     @NotNull(message = "Start date is required")
-    @FutureOrPresent(message = "Start date must be today or in the future")
     private LocalDate startDate;
 
 
