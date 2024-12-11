@@ -45,6 +45,8 @@ Clone or download the project from the repository.
 
 Below are the available API endpoints for the service. Use Postman or any other API testing tool to test them.
 
+#### API Documentation : https://documenter.getpostman.com/view/32386594/2sAYHwHPqS 
+
 ---
 
 ### GET
